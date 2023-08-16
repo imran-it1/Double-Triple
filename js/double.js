@@ -12,4 +12,17 @@ document.getElementById('double-btn').addEventListener('click', function(){
     const double = Number * 2;
     const doubleAppendElement = document.getElementById('double-append');
     doubleAppendElement.value = double;
+
+
+
+
+    // Result clear if input field clear
+    const inputField = document.getElementById('double-input');
+    const resultField = document.getElementById('double-append');
+
+    inputField.addEventListener('input', function(){
+        if(inputField.value === ''){
+            resultField.value = '';
+        }
+    })
 })
