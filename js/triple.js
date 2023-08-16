@@ -12,13 +12,13 @@ document.getElementById('triple-btn').addEventListener('click', function(){
     tripleAppendElement.value = triple;
 
 
-        // Result clear if input field clear
-        const inputField = document.getElementById('triple-input');
-        const resultField = document.getElementById('triple-append');
+    // Result clear if input field clear
+    const inputField = document.getElementById('triple-input');
+    const resultField = document.getElementById('triple-append');
     
-        inputField.addEventListener('input', function(){
-            if(inputField.value === ''){
-                resultField.value = '';
-            }
-        })
+    inputField.addEventListener('input', function(){
+        if(inputField.value === ''){
+            resultField.value = '';
+        }
+    })
 })
