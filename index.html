@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task 1</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <div class="flex justify-center items-center h-screen gap-5">
+        <!-- Double Portion -->
+        <div class="">
+          <label class="label">
+            <span class="label-text">What is your number?</span>
+          </label>
+          <!-- Double Number Input Field -->
+          <input
+            id="double-input"
+            type="text"
+            placeholder="Type number here"
+            class="input input-bordered input-success w-full max-w-xs mb-4"
+          />
+          <!-- Double Button -->
+          <button id="double-btn" class="btn btn-success">Double</button>
+          <!-- Double Append -->
+          <input
+            id="double-append"
+            type="text"
+            placeholder="Double Result"
+            class="input input-bordered max-w-xs mb-4 block mt-4"
+          />
+        </div>
+        <!-- Triple Portion -->
+        <div class="">
+          <label class="label">
+            <span class="label-text">What is your number?</span>
+          </label>
+          <!-- Triple Number Input Field -->
+          <input
+            id="triple-input"
+            type="text"
+            placeholder="Type number here"
+            class="input input-bordered input-secondary w-full max-w-xs mb-4"
+          />
+          <!-- Triple Button -->
+          <button id="triple-btn" class="btn btn-secondary">Triple</button>
+          <!-- Triple Append -->
+          <input
+            type="text"
+            placeholder="Triple Result"
+            class="input input-bordered max-w-xs mb-4 block mt-4"
+          />
+        </div>
+      </div>
+    </header>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/double.js"></script>
+    <script src="./js/triple.js"></script>
+  </body>
+</html>
