@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discout Calculate</title>
+    <link
+      rel="shortcut icon"
+      href="./images/calculate.png"
+      type="image/x-icon"
+    />
+    <!-- Tailwind and Daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main>
+      <div class="flex justify-center items-center h-screen gap-20">
+        <!-- Part One -->
+        <div class="space-y-2">
+          <h1 class="text-3xl">Price: <span id="price">1000</span></h1>
+          <button id="apply-btn" class="btn btn-md btn-accent">Apply</button>
+          <p>Discount Price: <span id="actual-price"></span></p>
+        </div>
+
+        <!-- Part Two -->
+        <div class="space-y-2">
+          <!-- Price -->
+          <h1 class="text-3xl">
+            Price: <span id="product-actual-price">1000</span>
+          </h1>
+          <p class="">Coupon:</p>
+          <!-- Coupon code apple field -->
+          <input
+            id="promo-input"
+            type="text"
+            placeholder="Promo code"
+            class="input input-bordered w-full max-w-xs"
+          />
+          <!-- Apply Button -->
+          <button id="apply-btn-two" class="btn btn-md btn-accent">
+            Apply
+          </button>
+          <!-- Discout Price -->
+          <p>Discount Price: <span id="discount-price"></span></p>
+          <!-- Pay Button -->
+          <button class="btn btn-md btn-primary">Pay</button>
+        </div>
+      </div>
+    </main>
+    <script src="./js/dis1Utility.js"></script>
+    <script src="./js/discount1.js"></script>
+    <script src="./js/discount2.js"></script>
+  </body>
+</html>
+f
